@@ -1,0 +1,87 @@
+initial commit: conversor de moedas em C#
+string s;
+int o;
+double r, d, e, l, f, i, rd, re, rl, ri, rf;
+
+
+Console.WriteLine("1 - Real para Dólar americano (USD)");
+Console.WriteLine("2 - Real para Euro (EUR)");
+Console.WriteLine("3 - Real para Libra esterlina (GBP)"); 
+Console.WriteLine("4 - Real para Iene japonês (JPY)");
+Console.WriteLine("5 - Real para Franco suíço (CHF)");
+Console.WriteLine("6 - Dólar americano (USD) para Real");
+Console.WriteLine("7 - Euro (EUR) para Real");
+Console.WriteLine("8 - Libra esterlina (GBP) para Real");
+Console.WriteLine("9 - Iene japonês (JPY) para Real");
+Console.WriteLine("10 - Franco suíço (CHF) para Real");
+s = Console.ReadLine();
+o= int.Parse(s);
+Console.WriteLine("Digite o valor em reais: ");
+s = Console.ReadLine();
+r = double.Parse(s);
+
+if (o == 1)
+{
+    d = r / 4.99;
+    Console.WriteLine("Seu valor convertido para Dólar americano ficará: " + d.ToString("F2"));
+    Console.WriteLine("Cotação atual 04/05/26: 4.99");
+}
+else if (o == 2)
+{
+    e = r / 5.84;
+    Console.WriteLine("Seu valor convertido para Euro ficará: " + e.ToString("F2"));
+    Console.WriteLine("Cotação atual 04/05/26: 5.84");
+}
+else if (o == 3)
+{
+    l = r / 6.75;
+    Console.WriteLine("Seu valor convertido para Libra esterlina ficará: " + l.ToString("F2"));
+    Console.WriteLine("Cotação atual 04/05/26: 6.75");
+}
+else if (o == 4)
+{
+    i = r * 0.032;
+    Console.WriteLine("Seu valor convertido para Iene japonês ficará: " + i.ToString("F2"));
+    Console.WriteLine("Cotação atual 04/05/26: 0.032");
+}
+else if (o == 5)
+{
+    f = r / 6.36;
+    Console.WriteLine("Seu valor convertido para Franco suíço ficará: " + f.ToString("F2"));
+    Console.WriteLine("Cotação atual 04/05/26: 6.36");
+}
+else if (o == 6)
+{
+    rd = r * 4.99;
+    Console.WriteLine("Seu valor convertido ficará: " + rd.ToString("F2"));
+    Console.WriteLine("Cotação atual 04/05/26: 4.99");
+}
+else if (o == 7)
+{
+    re = r * 5.84;
+    Console.WriteLine("Seu valor convertido ficará: " + re.ToString("F2")); 
+    Console.WriteLine("Cotação atual 04/05/26: 5.84");
+
+}
+else if (o == 8)
+{
+    rl = r * 6.75;
+    Console.WriteLine("Seu valor convertido ficará: " + rl.ToString("F2"));
+    Console.WriteLine("Cotação atual 04/05/26: 6.75");
+}
+else if (o == 9)
+{
+    ri = r / 0.032;
+    Console.WriteLine("Seu valor convertido ficará: " + ri.ToString("F2"));
+    Console.WriteLine("Cotação atual 04/05/26: 0.032");
+}
+else if (o == 10)
+{
+    rf = r * 6.36;
+    Console.WriteLine("Seu valor convertido ficará: " + rf.ToString("F2"));
+    Console.WriteLine("Cotação atual 04/05/26: 6.36");
+}
+else
+{
+    Console.WriteLine("Valor ínvalido");
+}
